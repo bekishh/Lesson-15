@@ -8,6 +8,7 @@ public class Main {
         Quadrilateral quadrilateral = new Quadrilateral();
         Pentagon pentagon = new Pentagon();
         Hexagon hexagon = new Hexagon();
+        Heptagon heptagon = new Heptagon();
 
         while (true) {
             System.out.print("""
@@ -18,6 +19,7 @@ public class Main {
                     2) Quadrilateral (Четырехугольник)
                     3) Pentagon (Пятиугольник)
                     4) Hexagon (Шестиугольник)
+                    5) Heptagon (Семиугольник)
                                     
                     Your command:\s""");
 
@@ -35,6 +37,9 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Hexagon perimeter: " + hexagon.getPerimeter());
+                    break;
+                case 5:
+                    System.out.println("Heptagon perimeter: " + heptagon.getPerimeter());
                     break;
                 default:
                     System.out.println("There is no such command!");
